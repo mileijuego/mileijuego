@@ -1,0 +1,71 @@
+{
+  "suit": {
+    "img": "/img/store/suit.png",
+    "price": 0,
+    "type": "armors",
+    "spriteKey": "milei",
+    "effects": []
+  },
+  "leather-jacket": {
+    "img": "/img/store/leather-jacket.png",
+    "price": 10000,
+    "type": "armors",
+    "spriteKey": "milei-jacket",
+    "effects": [
+      { "effect": "hpMultiplier", "value": 2 },
+      { "effect": "sumSpeed", "value": 3 }
+    ]
+  },
+  "libertarian-armor": {
+    "img": "/img/store/libertarian-armor.png",
+    "price": 100000,
+    "type": "armors",
+    "spriteKey": "milei-super-libertarian",
+    "effects": [
+      { "effect": "hpMultiplier", "value": 3 },
+      { "effect": "sumSpeed", "value": 5 },
+      { "effect": "skillPointsMultiplier", "value": 2 }
+    ]
+  },
+  "divine-armor": {
+    "img": "/img/store/divine-armor.png",
+    "price": 10000000,
+    "type": "armors",
+    "spriteKey": "milei-divine",
+    "effects": [
+      { "effect": "hpMultiplier", "value": 4 },
+      { "effect": "sumSpeed", "value": 7 },
+      { "effect": "skillPointsMultiplier", "value": 3 }
+    ]
+  },
+  "libertarian-staff-normal": {
+    "img": "/img/store/libertarian-staff-normal.png",
+    "price": 0,
+    "type": "weapons",
+    "effects": []
+  },
+  "libertarian-staff-gold": {
+    "img": "/img/store/libertarian-staff-gold.png",
+    "price": 30000,
+    "type": "weapons",
+    "effects": []
+  },
+  "libertarian-staff-fire": {
+    "img": "/img/store/libertarian-staff-fire.png",
+    "price": 30000,
+    "type": "weapons",
+    "effects": []
+  },
+  "libertarian-staff-ice": {
+    "img": "/img/store/libertarian-staff-ice.png",
+    "price": 30000,
+    "type": "weapons",
+    "effects": []
+  },
+  "divine-staff": {
+    "img": "/img/store/divine-staff.png",
+    "price": 1000000,
+    "type": "weapons",
+    "effects": []
+  }
+}

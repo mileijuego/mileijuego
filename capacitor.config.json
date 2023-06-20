@@ -1,0 +1,8 @@
+{
+  "appId": "com.gamesflood.mileijuego",
+  "appName": "Milei: El Super Libertarian",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}

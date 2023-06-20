@@ -1,0 +1,56 @@
+.intro-text-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro-text-container * {
+  color: #feda4a;
+}
+
+.intro-text-container .star-wars {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  perspective: 60vmin;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 10vmin;
+  font-weight: 600;
+  text-align: justify;
+}
+
+@keyframes crawl {
+  0% {
+    top: 100%;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    top: -500vmin;
+    transform: rotateX(25deg) translateZ(-220vmin);
+  }
+}
+
+.intro-text-container .crawl {
+  position: relative;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+  animation-fill-mode: forwards;
+}
+
+.intro-text-container .fade {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 0;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.intro-text-container .back-button-container {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: auto;
+}

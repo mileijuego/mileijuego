@@ -1,0 +1,113 @@
+{
+  "hater": {
+    "givesExp": 1
+  },
+  "pibi": {
+    "givesExp": 5
+  },
+  "ofe": {
+    "givesExp": 10
+  },
+  "old-lady": {
+    "givesExp": 15
+  },
+  "gorilla": {
+    "givesExp": 20
+  },
+  "maslaboy": {
+    "givesExp": 30
+  },
+  "fat-campodist": {
+    "givesExp": 40
+  },
+  "golden-fat-campodist": {
+    "givesExp": 100
+  },
+  "gordo-mortero": {
+    "givesExp": 400
+  },
+  "alberso": {
+    "givesExp": 1000
+  },
+  "larrata": {
+    "givesExp": 2000
+  },
+  "bullshit": {
+    "givesExp": 4000
+  },
+  "bulldog": {
+    "givesExp": 1400
+  },
+  "masgloton": {
+    "givesExp": 6000
+  },
+  "crisistina": {
+    "givesExp": 4000
+  },
+  "crisistina-devil": {
+    "givesExp": 16000
+  },
+  "crisistina-devil-clone": {
+    "givesExp": 1
+  },
+  "expert": {
+    "givesExp": 100
+  },
+  "gabois": {
+    "givesExp": 100
+  },
+  "kicilove": {
+    "givesExp": 100
+  },
+  "larrata-head": {
+    "givesExp": 200
+  },
+  "central-bank-alberso": {
+    "givesExp": 20000
+  },
+  "central-bank-larrata": {
+    "givesExp": 20000
+  },
+  "central-bank-crisistina": {
+    "givesExp": 16000
+  },
+  "central-bank-crisistina-devil": {
+    "givesExp": 64000
+  },
+  "central-bank": {
+    "givesExp": 10000
+  },
+  "alien": {
+    "givesExp": 200000
+  },
+  "wall-alien": {
+    "givesExp": 500
+  },
+  "wall-alien2": {
+    "givesExp": 500
+  },
+  "wall-alien3": {
+    "givesExp": 500
+  },
+  "wall-alien4": {
+    "givesExp": 500
+  },
+  "mini-alien": {
+    "givesExp": 1000
+  },
+  "npc": {
+    "givesExp": 150
+  },
+  "gleta": {
+    "givesExp": 400
+  },
+  "br-pibi": {
+    "givesExp": 500
+  },
+  "br-ofe": {
+    "givesExp": 1000
+  },
+  "luladrao": {
+    "givesExp": 40000
+  }
+}

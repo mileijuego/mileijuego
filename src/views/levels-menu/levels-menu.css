@@ -1,0 +1,106 @@
+.levels-title {
+  text-align: center;
+}
+
+.back-button-container {
+  margin: 0.5em;
+  width: calc(100% - 1em);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+}
+.back-button {
+  height: 2em;
+  cursor: pointer;
+  display: block;
+  z-index: 999;
+}
+.back-button:hover {
+  filter: brightness(120%);
+}
+
+.levels-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.level {
+  display: flex;
+  align-items: center;
+  border: 1px solid #666;
+  border-radius: 10px;
+  margin: 0.5em 0.5em;
+  padding: 1em;
+  box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.1s;
+  cursor: pointer;
+  width: calc(100% - 3em);
+  text-align: left;
+  background-color: #f7d354;
+  color: #000;
+}
+.level:hover {
+  box-shadow: 2px 2px 5px 0px rgba(247, 211, 84, 0.75);
+  position: relative;
+  transition: all 0.1s ease-out;
+  top: -5px;
+  left: -5px;
+}
+
+.level:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+  opacity: 0.5;
+  color: #fff;
+  box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.75);
+}
+
+.level:disabled .level-text-container b {
+  color: #fff;
+}
+
+.level > img {
+  height: 80px;
+  border-radius: 10px;
+  margin: 0px 10px 0px 0px;
+}
+
+.level .level-text-container {
+  align-items: center;
+  width: 100%;
+}
+
+.level .level-text-container b {
+  color: #000;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.level:hover .level-text-container b {
+  font-weight: 900;
+}
+
+.level .level-text-container .level-description {
+  white-space: pre-line;
+}
+
+.level .level-text-container .level-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.level .level-description-record b,
+.level .level-description-record p {
+  margin: 0;
+}
+
+ul.skills > *:not(:first-child) {
+  margin-top: 1em;
+}
+ul.skills li > b {
+  margin-right: 0.5em;
+}

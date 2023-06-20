@@ -1,0 +1,41 @@
+.skillsTable tr td {
+  padding: 10px;
+}
+
+.skillTitle {
+  font-weight: bold;
+  color: #f7d354;
+}
+
+.skillPoints {
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #f7d354;
+}
+
+.minLevel {
+  font-size: 12px;
+}
+
+.skillsTable tr,
+.itemsTable tr {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.itemsTable img {
+  width: 72px;
+}
+
+.level {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.availablePoints {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}

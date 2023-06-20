@@ -1,0 +1,10 @@
+export const pauseDialogZIndex = 99;
+export const gameUiZIndex = 98;
+export const screenEffectZIndex = 97;
+export const hpBarZIndex = 7;
+export const projectilesZIndex = 6;
+export const shieldZIndex = 5;
+export const weaponsZIndex = 4;
+export const agentsZIndex = 3;
+// export const wallsZIndex = 2;
+export const itemsZIndex = 1;

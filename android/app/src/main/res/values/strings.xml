@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Milei: El Super Libertarian</string>
+    <string name="title_activity_main">Milei: El Super Libertarian</string>
+    <string name="package_name">com.gamesflood.mileijuego</string>
+    <string name="custom_url_scheme">com.gamesflood.mileijuego</string>
+</resources>

@@ -1,0 +1,13 @@
+.flag {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid gold;
+}
+
+.continue {
+  display: flex;
+  flex-direction: row-reverse;
+}

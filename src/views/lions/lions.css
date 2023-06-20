@@ -1,0 +1,92 @@
+@keyframes diamond {
+  from {
+    filter: drop-shadow(0 0 0 rgb(130, 225, 238));
+  }
+  to {
+    filter: drop-shadow(0 0 0.5em rgb(130, 225, 238));
+  }
+}
+
+@keyframes gold {
+  from {
+    filter: drop-shadow(0 0 0 gold);
+  }
+  to {
+    filter: drop-shadow(0 0 0.25em gold);
+  }
+}
+
+.lions-title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: #f7d354;
+  width: fit-content;
+  position: absolute;
+  width: calc(100% - 1em);
+  margin: 1em 0 0 0;
+}
+
+.lions-subtitle {
+  margin: 0 5%;
+}
+
+.back-button-container-lions {
+  margin: 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 1em);
+}
+.back-button-lions {
+  height: 2em;
+  cursor: pointer;
+  position: absolute;
+}
+.back-button-lions:hover {
+  filter: brightness(120%);
+}
+
+.lions-container {
+  width: 90%;
+  padding: 5%;
+}
+
+.lion-and-donation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.lion-and-donation.diamond .lion-name {
+  font-size: 2em;
+  font-weight: 900;
+  animation: diamond 2s infinite alternate;
+}
+.lion-and-donation.gold .lion-name {
+  font-size: 1.5em;
+  font-weight: 700;
+  animation: gold 2s infinite alternate;
+}
+.lion-and-donation.silver .lion-name {
+  font-size: 1em;
+  font-weight: 600;
+}
+.lion-and-donation.bronze .lion-name {
+  font-size: 0.8em;
+}
+
+.lion-name {
+  color: #fff;
+}
+
+.lion-donations {
+  color: #f7d354;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar-track {
+  background: blue;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+}

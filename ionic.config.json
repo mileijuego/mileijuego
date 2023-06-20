@@ -1,0 +1,7 @@
+{
+  "name": "Milei: El Super Libertarian",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

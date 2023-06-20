@@ -1,0 +1,28 @@
+{
+  "despertar-leones": {
+    "keyCode": 81
+  },
+  "libertad-avanza": {
+    "keyCode": 69
+  },
+  "zurdos-tiemblen": {
+    "keyCode": 82
+  },
+  "milei-porquenotevas": {
+    "keyCode": 70,
+    "posX": 1200,
+    "posY": 400
+  },
+  "libertarian-shield": {
+    "keyCode": 84,
+    "minLevel": 8,
+    "maxPoints": 1
+  },
+  "multiple-shot": {
+    "maxPoints": 10
+  },
+  "liberator-book": {
+    "minLevel": 8
+  },
+  "palaboom": {}
+}

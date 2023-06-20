@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  border: 2px solid #f7d354;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.exp {
+  height: 100%;
+  background-color: #f7d354;
+}

@@ -1,0 +1,316 @@
+{
+  "alberso": {
+    "category": "ar",
+    "playerAgent": "milei",
+    "finalBoss": "alberso",
+    "music": "music-epic",
+    "scripts": [],
+    "mapWidth": 1430,
+    "mapHeight": 870,
+    "mapColor": "#4F6B49",
+    "enemyWaves": [
+      {
+        "enemiesNumber": 12,
+        "enemies": [
+          { "item": "ofe", "chance": 1 },
+          { "item": "pibi", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 24,
+        "enemies": [
+          { "item": "ofe", "chance": 1 },
+          { "item": "pibi", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 36,
+        "enemies": [
+          { "item": "ofe", "chance": 1 },
+          { "item": "pibi", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      }
+    ]
+  },
+  "larrata": {
+    "category": "ar",
+    "playerAgent": "milei",
+    "finalBoss": "larrata",
+    "music": "music-epic",
+    "scripts": [],
+    "mapWidth": 1430,
+    "mapHeight": 870,
+    "mapColor": "#808067",
+    "enemyWaves": [
+      {
+        "enemiesNumber": 16,
+        "enemies": [
+          { "item": "old-lady", "chance": 1 },
+          { "item": "gorilla", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 32,
+        "enemies": [
+          { "item": "old-lady", "chance": 1 },
+          { "item": "gorilla", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 48,
+        "enemies": [
+          { "item": "old-lady", "chance": 1 },
+          { "item": "gorilla", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      }
+    ]
+  },
+  "bullshit": {
+    "category": "ar",
+    "playerAgent": "milei",
+    "finalBoss": null,
+    "music": "music-epic",
+    "scripts": ["bullshit"],
+    "mapWidth": 1430,
+    "mapHeight": 870,
+    "mapColor": "#808067",
+    "enemyWaves": []
+  },
+  "masgloton": {
+    "category": "ar",
+    "playerAgent": "milei",
+    "finalBoss": null,
+    "music": "music-epic",
+    "scripts": ["masgloton"],
+    "mapWidth": 1430,
+    "mapHeight": 870,
+    "mapColor": "#A78255",
+    "enemyWaves": []
+  },
+  "crisistina": {
+    "category": "ar",
+    "playerAgent": "milei",
+    "finalBoss": "crisistina",
+    "music": "music-dark",
+    "scripts": [],
+    "mapWidth": 1430,
+    "mapHeight": 870,
+    "mapColor": "#677880",
+    "enemyWaves": [
+      {
+        "enemiesNumber": 12,
+        "enemies": [
+          { "item": "fat-campodist", "chance": 9 },
+          { "item": "golden-fat-campodist", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 24,
+        "enemies": [
+          { "item": "fat-campodist", "chance": 9 },
+          { "item": "golden-fat-campodist", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 36,
+        "enemies": [
+          { "item": "fat-campodist", "chance": 9 },
+          { "item": "golden-fat-campodist", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      }
+    ]
+  },
+  "gabois": {
+    "category": "ar",
+    "playerAgent": "milei",
+    "finalBoss": "gabois",
+    "music": "music-dark",
+    "scripts": ["gabois"],
+    "mapWidth": 2000,
+    "mapHeight": 1200,
+    "mapColor": "#B37A7A",
+    "enemyWaves": [
+      {
+        "enemiesNumber": 1000,
+        "enemies": [
+          { "item": "fat-campodist", "chance": 30 },
+          { "item": "golden-fat-campodist", "chance": 6 },
+          { "item": "gordo-mortero", "chance": 1 }
+        ],
+        "initialDelay": 8,
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.2
+      }
+    ]
+  },
+  "central-bank": {
+    "category": "ar",
+    "playerAgent": "milei",
+    "finalBoss": null,
+    "music": "music-dark",
+    "scripts": ["central-bank"],
+    "mapWidth": 2000,
+    "mapHeight": 1200,
+    "startX": 1000,
+    "startY": 1000,
+    "mapColor": "#998666",
+    "enemyWaves": []
+  },
+
+  "alien": {
+    "category": "ar",
+    "playerAgent": "milei",
+    "finalBoss": "alien",
+    "music": "music-dark",
+    "scripts": ["alien"],
+    "mapWidth": 2200,
+    "mapHeight": 1800,
+    "mapColor": "#450000",
+    "enemyWaves": [
+      {
+        "enemiesNumber": 6,
+        "enemies": [
+          { "item": "npc", "chance": 2 },
+          { "item": "gleta", "chance": 1 },
+          { "item": "mini-alien", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 12,
+        "enemies": [
+          { "item": "npc", "chance": 2 },
+          { "item": "gleta", "chance": 1 },
+          { "item": "mini-alien", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 18,
+        "enemies": [
+          { "item": "npc", "chance": 2 },
+          { "item": "gleta", "chance": 1 },
+          { "item": "mini-alien", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      }
+    ]
+  },
+
+  "luladrao": {
+    "category": "br",
+    "playerAgent": "milei",
+    "finalBoss": "luladrao",
+    "music": "music-dark",
+    "scripts": [],
+    "mapWidth": 1430,
+    "mapHeight": 870,
+    "mapColor": "#779e77",
+    "enemyWaves": [
+      {
+        "enemiesNumber": 12,
+        "enemies": [
+          { "item": "br-ofe", "chance": 1 },
+          { "item": "br-pibi", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 24,
+        "enemies": [
+          { "item": "br-ofe", "chance": 1 },
+          { "item": "br-pibi", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      },
+      {
+        "enemiesNumber": 36,
+        "enemies": [
+          { "item": "br-ofe", "chance": 1 },
+          { "item": "br-pibi", "chance": 1 }
+        ],
+        "enemySpawnDelay": 2,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.5
+      }
+    ]
+  },
+
+  "survival": {
+    "category": "others",
+    "special": true,
+    "playerAgent": "milei",
+    "showSurvivalRecord": true,
+    "finalBoss": null,
+    "music": "music-dark",
+    "scripts": ["survival"],
+    "mapWidth": 1600,
+    "mapHeight": 1200,
+    "mapColor": "#998666",
+    "enemyWaves": []
+  },
+  "zurdo": {
+    "category": "others",
+    "special": true,
+    "playerAgent": "gordo-mortero",
+    "finalBoss": null,
+    "music": "music-dark",
+    "scripts": ["zurdo"],
+    "mapWidth": 1430,
+    "mapHeight": 870,
+    "mapColor": "#998666",
+    "enemyWaves": []
+  },
+  "stoic": {
+    "category": "others",
+    "special": true,
+    "playerAgent": "milei",
+    "finalBoss": null,
+    "music": "music-epic",
+    "scripts": ["stoic"],
+    "mapWidth": 1600,
+    "mapHeight": 1200,
+    "startX": 200,
+    "startY": 600,
+    "mapColor": "#998666",
+    "enemyWaves": []
+  }
+}
