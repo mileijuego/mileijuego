@@ -9,13 +9,13 @@ export default class LibertadAvanza extends Skill {
 
   constructor(props: ISkill) {
     super(props);
-    this.__delay = 16;
+    this.__delay = 1;
 
     this.soundKey = 'libertad-avanza';
   }
 
   execute(game: Game) {
-    const healing = 50 * this.__points;
+    const healing = 500 * this.__points;
 
     game.healAgent(this.agent, healing);
 
