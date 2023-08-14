@@ -8,6 +8,9 @@
   "ofe": {
     "givesExp": 10
   },
+  "lali": {
+    "givesExp": 30
+  },
   "old-lady": {
     "givesExp": 15
   },

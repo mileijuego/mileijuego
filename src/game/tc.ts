@@ -57,6 +57,10 @@ const tc1: DataEnemyTC = [
         item: 'ofe',
         chance: 5,
       },
+      {
+        item: 'lali',
+        chance: 1,
+      },
     ],
     chance: 50,
   },

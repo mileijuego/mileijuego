@@ -46,6 +46,7 @@ import BrPibi from './luladrao-pack/br-pibi';
 import Bullshit from './bullshit';
 import Bulldog from './bulldog';
 import Momb from './momb';
+import Lali from './lali';
 
 const agentsMap = {
   alberso: Alberso,
@@ -55,6 +56,7 @@ const agentsMap = {
   milei: Milei,
   hater: Hater,
   ofe: Ofe,
+  lali: Lali,
   'old-lady': OldLady,
   pibi: Pibi,
   crisistina: Crisistina,

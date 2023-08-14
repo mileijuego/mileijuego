@@ -12,8 +12,9 @@
       {
         "enemiesNumber": 12,
         "enemies": [
-          { "item": "ofe", "chance": 1 },
-          { "item": "pibi", "chance": 1 }
+          { "item": "ofe", "chance": 6 },
+          { "item": "pibi", "chance": 6 },
+          { "item": "lali", "chance": 1 }
         ],
         "enemySpawnDelay": 2,
         "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
@@ -22,8 +23,9 @@
       {
         "enemiesNumber": 24,
         "enemies": [
-          { "item": "ofe", "chance": 1 },
-          { "item": "pibi", "chance": 1 }
+          { "item": "ofe", "chance": 6 },
+          { "item": "pibi", "chance": 6 },
+          { "item": "lali", "chance": 1 }
         ],
         "enemySpawnDelay": 2,
         "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
@@ -32,8 +34,9 @@
       {
         "enemiesNumber": 36,
         "enemies": [
-          { "item": "ofe", "chance": 1 },
-          { "item": "pibi", "chance": 1 }
+          { "item": "ofe", "chance": 6 },
+          { "item": "pibi", "chance": 6 },
+          { "item": "lali", "chance": 1 }
         ],
         "enemySpawnDelay": 2,
         "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
