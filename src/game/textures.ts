@@ -18,6 +18,7 @@ const textures: ITextures = {
   alberso: PIXI.Texture.from('/img/alberso.png'),
   pibi: PIXI.Texture.from('/img/pibi.png'),
   ofe: PIXI.Texture.from('/img/ofe.png'),
+  lali: PIXI.Texture.from('/img/lali.png'),
   'libertarian-lion': PIXI.Texture.from('/img/libertarian-lion.png'),
   larrata: PIXI.Texture.from('/img/larrata.png'),
   'old-lady': PIXI.Texture.from('/img/old-lady.png'),
