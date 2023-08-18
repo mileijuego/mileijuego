@@ -47,7 +47,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Android
 
-To develop on Android you have to get the Android Studio and a SDK with the version 32 installed.
+To develop on Android you have to get the Android Studio and a SDK with the version 33 installed.
 
 You will need to have ionic installed, please use:
 
