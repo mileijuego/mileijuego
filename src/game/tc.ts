@@ -128,6 +128,18 @@ const tc4: DataEnemyTC = [
     chance: 1600,
   },
   {
+    item: 'bullshit',
+    chance: 2,
+  },
+  {
+    item: 'bulldog',
+    chance: 3,
+  },
+  {
+    item: 'mazza',
+    chance: 2,
+  },
+  {
     item: 'kicilove',
     chance: 5,
   },
