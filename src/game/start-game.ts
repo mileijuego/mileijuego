@@ -166,7 +166,6 @@ export async function startGame(
       84: 'T',
       70: 'F',
     };
-
     const playerSkillsToFetch = player.skills.map((skill) => {
       if (!skill.skillKey) {
         throw new Error('skill.skillKey is undefined.');
@@ -182,7 +181,7 @@ export async function startGame(
 
       const skillData = charSkills[skill.skillKey as keyof typeof charSkills];
 
-      if (!skillData?.keyCode) {
+      if (!skillData.keyCode) {
         // If the skill does not have keyCode means that it is a
         // passive skill.
         return null;

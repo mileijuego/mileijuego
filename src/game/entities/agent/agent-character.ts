@@ -1,5 +1,6 @@
 import Agent from '.';
 import { charItems } from '../../char/char-items';
+import { charSkills } from '../../char/char-skills';
 import {
   Character,
   calculateLevel,
@@ -31,14 +32,17 @@ export default class AgentCharacter extends Agent {
     }
 
     // Sets the skills.
-    character.skills.forEach((cSkill) => {
-      if (cSkill.points > 0) {
-        const skill = new skillMap[cSkill.skillKey]({ agent: this });
-        skill.setPoints(cSkill.points, game);
+    character.skills
+      // Removes the skills that are not in the char skills json
+      .filter((skill) => charSkills[skill.skillKey as keyof typeof charSkills])
+      .forEach((cSkill) => {
+        if (cSkill.points > 0) {
+          const skill = new skillMap[cSkill.skillKey]({ agent: this });
+          skill.setPoints(cSkill.points, game);
 
-        this.addSkill(skill);
-      }
-    });
+          this.addSkill(skill);
+        }
+      });
 
     // Sets the weapon.
     const weaponKey = getCharWeapon(character);
