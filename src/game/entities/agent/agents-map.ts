@@ -47,6 +47,8 @@ import Bullshit from './bullshit';
 import Bulldog from './bulldog';
 import Momb from './momb';
 import Lali from './lali';
+import Buni from './buni';
+import Mazza from './mazza';
 
 const agentsMap = {
   alberso: Alberso,
@@ -68,6 +70,8 @@ const agentsMap = {
   bullshit: Bullshit,
   bulldog: Bulldog,
   momb: Momb,
+
+  mazza: Mazza,
 
   masgloton: Masgloton,
   maslaboy: Maslaboy,
@@ -103,6 +107,9 @@ const agentsMap = {
   luladrao: Luladrao,
   'br-ofe': BrOfe,
   'br-pibi': BrPibi,
+
+  // Allies
+  buni: Buni,
 
   // Walls
   'wall-pot': WallPot,

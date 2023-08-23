@@ -47,6 +47,7 @@ export const getDefaultUserData = (): IUserData => ({
       { skillKey: 'multiple-shot', points: 0 },
       { skillKey: 'liberator-book', points: 0 },
       { skillKey: 'palaboom', points: 0 },
+      { skillKey: 'buni', points: 0 },
     ],
     inventory: {
       armors: {

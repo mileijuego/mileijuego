@@ -258,6 +258,12 @@ const sounds: ISounds = {
     preload: true,
   }),
 
+  // Mazza
+  'mazza-1': new GameSound({
+    src: ['/snd/mazza-1.mp3'],
+    preload: true,
+  }),
+
   // Masgloton
   'masgloton-economia': new GameSound({
     src: ['/snd/masgloton-economia.mp3'],

@@ -74,6 +74,10 @@
   "gabois-description": "Javier and his lions have made great strides towards freedom by defeating old enemies. But it seems that now, as freedom is slowly blossoming, a horde of evil minions approaches to prevent it.",
   "gabois-winMessage": "You defeated Gabois!",
 
+  "december-is-far-away-title": "December Is Far Away",
+  "december-is-far-away-description": "The Lion achieved a tremendous result in August, but December is still far away, and the ENTIRE Cast is conspiring to bring him and his lions down.",
+  "december-is-far-away-winMessage": "You defeated the Cast!",
+
   "central-bank-title": "Central Bank",
   "central-bank-description": "Although the enemies of freedom have been defeated, their creator who makes all this possible still exists: The Central Bank.\nThe battle will be tough, but necessary.",
   "central-bank-winMessage": "You defeated the Central Bank!",
@@ -115,6 +119,8 @@
   "skill-liberator-bookD": "(Passive) Milei possesses so much knowledge that it automatically detaches from him in the form of a book, educating the nearest enemy. Additionally, if the lefty happens to be educated, they will transform into a worker who assists Javier. (+{SKILL_BOOK_BASE_DMG} damage per point every 18 seconds)",
   "skill-palaboom": "Palaboom",
   "skill-palaboomD": "(Passive) Each shovel thrown by Milei has a chance to explode due to the excess of freedom it holds. The explosion deals the same damage as the shovel, and the fire damage is also the same. (+1% chance per point)",
+  "skill-buni": "The Buni",
+  "skill-buniD": "(Passive) The Buni will appear to help the Lion with his tweets, Coca-Colas, and his 'jsjs'.",
 
   "item-suit": "Suit",
   "item-suitD": "Milei's classic suit.",

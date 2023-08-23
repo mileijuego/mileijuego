@@ -1,5 +1,6 @@
 import DespertarLeones from './despertar-leones';
 import LibertadAvanza from './libertad-avanza';
+import SkillBuni from './skill-buni';
 import SkillLiberatorBook from './skill-liberator-book';
 import SkillLibertarianShield from './skill-libertarian-shield';
 import SkillMileiPorquenotevas from './skill-milei-porquenotevas';
@@ -15,7 +16,8 @@ const skillMap = {
   'milei-porquenotevas': SkillMileiPorquenotevas,
   'multiple-shot': SkillMultipleShot,
   'liberator-book': SkillLiberatorBook,
-  "palaboom": SkillPalaboom
+  palaboom: SkillPalaboom,
+  buni: SkillBuni,
 };
 
 export type skillKey = keyof typeof skillMap;

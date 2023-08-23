@@ -9,7 +9,7 @@
     "givesExp": 10
   },
   "lali": {
-    "givesExp": 30
+    "givesExp": 75
   },
   "old-lady": {
     "givesExp": 15
@@ -40,6 +40,9 @@
   },
   "bulldog": {
     "givesExp": 1400
+  },
+  "mazza": {
+    "givesExp": 8000
   },
   "masgloton": {
     "givesExp": 6000

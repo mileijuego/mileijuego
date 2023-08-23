@@ -1,13 +1,19 @@
 import { Character } from '../char/character';
 import { ALLY_TEAM, ENEMY_TEAM, STOIC_EXP_PERCENTAGE } from '../constants';
 import Agent from '../entities/agent';
+import Alberso from '../entities/agent/alberso';
 import Bulldog from '../entities/agent/bulldog';
 import Bullshit from '../entities/agent/bullshit';
 import CentralBank from '../entities/agent/central-bank-pack/central-bank';
 import Expert from '../entities/agent/central-bank-pack/expert';
 import Gabois from '../entities/agent/central-bank-pack/gabois';
 import Kicilove from '../entities/agent/central-bank-pack/kicilove';
+import Crisistina from '../entities/agent/crisistina';
+import GordoMortero from '../entities/agent/gabois-pack/gordo-mortero';
+import Lali from '../entities/agent/lali';
+import Larrata from '../entities/agent/larrata';
 import Masgloton from '../entities/agent/masgloton';
+import Mazza from '../entities/agent/mazza';
 import Milei from '../entities/agent/milei';
 import Sylvester from '../entities/agent/sylvester';
 import {
@@ -61,6 +67,52 @@ const scripts = {
     }, 5000);
 
     game.addDefenses(5000);
+  },
+
+  'december-is-far-away': (game: Game) => {
+    const enemies = [
+      new Mazza({ position: new Vector2D(game.width, 0), team: ENEMY_TEAM }),
+      new Bullshit({
+        position: new Vector2D(game.width, 100),
+        team: ENEMY_TEAM,
+      }),
+      new Crisistina({
+        position: new Vector2D(game.width, 200),
+        team: ENEMY_TEAM,
+      }),
+      new Gabois({ position: new Vector2D(game.width, 300), team: ENEMY_TEAM }),
+      new Larrata({
+        position: new Vector2D(game.width, 400),
+        team: ENEMY_TEAM,
+      }),
+      new Bulldog({
+        position: new Vector2D(game.width, 500),
+        team: ENEMY_TEAM,
+      }),
+      new Alberso({
+        position: new Vector2D(game.width, 600),
+        team: ENEMY_TEAM,
+      }),
+      new Lali({ position: new Vector2D(game.width, 700), team: ENEMY_TEAM }),
+      new GordoMortero({
+        position: new Vector2D(game.width, 800),
+        team: ENEMY_TEAM,
+      }),
+      new Masgloton({
+        position: new Vector2D(game.width, 900),
+        team: ENEMY_TEAM,
+      }),
+      new Kicilove({
+        position: new Vector2D(game.width, 1000),
+        team: ENEMY_TEAM,
+      }),
+      new Expert({
+        position: new Vector2D(game.width, 1100),
+        team: ENEMY_TEAM,
+      }),
+    ];
+
+    enemies.forEach((enemy) => game.addAgent(enemy));
   },
 
   'central-bank': (game: Game) => {
