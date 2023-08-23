@@ -75,6 +75,8 @@ const textures: ITextures = {
   'br-ofe': PIXI.Texture.from('/img/luladrao-pack/br-ofe.png'),
   'br-pibi': PIXI.Texture.from('/img/luladrao-pack/br-pibi.png'),
   momb: PIXI.Texture.from('/img/momb.png'),
+  buni: PIXI.Texture.from('/img/buni.png'),
+  mazza: PIXI.Texture.from('/img/mazza.png'),
 
   // Projectiles
   'projectile-bullet': PIXI.Texture.from('/img/projectile-bullet.png'),
@@ -134,6 +136,7 @@ const textures: ITextures = {
   ),
   'projectile-l': PIXI.Texture.from('/img/luladrao-pack/projectile-l.png'),
   'projectile-wine': PIXI.Texture.from('/img/projectile-wine.png'),
+  'projectile-pancakes': PIXI.Texture.from('/img/projectile-pancakes.png'),
 
   // Weapons
   bitgun: PIXI.Texture.from('/img/bitgun.png'),

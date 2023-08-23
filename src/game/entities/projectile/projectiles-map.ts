@@ -27,6 +27,7 @@ import {
   ProjectileMask,
   ProjectileOrbChoriIce,
   ProjectilePamy,
+  ProjectilePancakes,
   ProjectilePinkHeart,
   ProjectileProceda,
   ProjectileShovel,
@@ -82,6 +83,7 @@ const projectilesMap = {
   'projectile-happy': ProjectileHappy,
   'projectile-currenthing': ProjectileCurrenthing,
   'projectile-costillar': ProjectileCostillar,
+  'projectile-pancakes': ProjectilePancakes,
 };
 
 export type projectileKey = keyof typeof projectilesMap;

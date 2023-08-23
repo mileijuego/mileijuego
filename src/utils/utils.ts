@@ -115,3 +115,31 @@ function formatDecimal(num: number, divisor: number, suffix: string): string {
 
   return decimals ? int + '.' + decimals[0] + suffix : int + suffix;
 }
+
+interface ElementWithChance {
+  value: any;
+  chance: number;
+}
+
+export function getRandomElementByChance(
+  arr: ElementWithChance[],
+  rand = Math.random(),
+): any | null {
+  // Calculate the total chance sum to later use for random selection
+  const totalChanceSum = arr.reduce((sum, element) => sum + element.chance, 0);
+
+  // Generate a random number within the range of totalChanceSum
+  const randomValue = rand * totalChanceSum;
+
+  // Iterate through the elements and find the one that corresponds to the generated random value
+  let cumulativeChance = 0;
+  for (const element of arr) {
+    cumulativeChance += element.chance;
+    if (randomValue <= cumulativeChance) {
+      return element.value;
+    }
+  }
+
+  // Return null if the array is empty or something went wrong
+  return null;
+}

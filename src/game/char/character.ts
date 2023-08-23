@@ -45,7 +45,7 @@ export function getAvailableSkillsPoints(character: Character) {
 
   const level = calculateLevel(character.exp);
 
-  return level - usedPoints - 1;
+  return level - usedPoints;
 }
 
 export function addSkillPoint(character: Character, skillKey: string) {

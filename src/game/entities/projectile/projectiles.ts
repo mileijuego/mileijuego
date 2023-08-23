@@ -84,6 +84,21 @@ export class ProjectileBanana extends Projectile {
   }
 }
 
+export class ProjectilePancakes extends Projectile {
+  constructor(props: IProjectile) {
+    super(props);
+
+    this.speed = 6;
+
+    this.width = 32;
+    this.height = 32;
+
+    this.spriteData.projectileKey = 'projectile-pancakes';
+    this.spriteData.width = 48;
+    this.spriteData.height = 32;
+  }
+}
+
 export class ProjectileBitcoin extends Projectile {
   constructor(props: IProjectile) {
     super(props);

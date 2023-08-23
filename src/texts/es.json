@@ -74,6 +74,10 @@
   "gabois-description": "Javier y sus leones han logrado un gran avance hacia la libertad derrotando a los viejos enemigos. Pero parece que ahora, cuando la libertad poco a poco está floreciendo, una horda de esbirros del mal se aproxima para evitarlo.",
   "gabois-winMessage": "¡Derrotaste a Gabois!",
 
+  "december-is-far-away-title": "Diciembre está lejos",
+  "december-is-far-away-description": "El León consiguió un grandísimo resultado en Agosto, pero Diciembre todavía está lejos y TODA la Casta esta conspirando para bajarlo a él y a sus leones.",
+  "december-is-far-away-winMessage": "¡Derrotaste a la Casta!",
+
   "central-bank-title": "Banco Central",
   "central-bank-description": "A pesar de que los enemigos de la libertad fueron derrotados, todavía sigue vigente su creador que hace todo esto posible: El Banco Central.\nLa batalla será dura, pero necesaria.",
   "central-bank-winMessage": "¡Derrotaste al Banco Central!",
@@ -115,6 +119,8 @@
   "skill-liberator-bookD": "(Pasiva) Milei posee tantos conocimientos que se desprenden de él automáticamente en forma de libro educando al enemigo más cercano. Además, si el zurdo resulta ser educado se transformará en un trabajador que ayudará a Javier. (+{SKILL_BOOK_BASE_DMG} daño por punto cada 18 segundos)",
   "skill-palaboom": "Palaboom",
   "skill-palaboomD": "(Pasiva) Cada pala que lance Milei tendrá una chance de explotar debido al exceso de libertad que esta posee. La explosión hará el mismo daño que la pala y el daño de fuego también será el mismo. (+1% de chances por punto)",
+  "skill-buni": "El Buni",
+  "skill-buniD": "(Pasiva) El Buni aparecerá para ayudar al León con sus tweets, cocacolas y sus 'jsjs'.",
 
   "item-suit": "Traje",
   "item-suitD": "El traje de Milei de toda la vida.",
