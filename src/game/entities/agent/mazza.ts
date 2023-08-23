@@ -1,5 +1,4 @@
 import Agent, { IAgentChild } from '.';
-import Game from '../../game';
 import { IWeapon } from '../../interfaces';
 import SkillMagicCircleProjectiles from '../../skill/skill-magic-circle-projectiles';
 import SkillSpawnAgents from '../../skill/skill-spawn-agents';
