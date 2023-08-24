@@ -137,6 +137,7 @@ const textures: ITextures = {
   'projectile-l': PIXI.Texture.from('/img/luladrao-pack/projectile-l.png'),
   'projectile-wine': PIXI.Texture.from('/img/projectile-wine.png'),
   'projectile-pancakes': PIXI.Texture.from('/img/projectile-pancakes.png'),
+  'projectile-jsjs': PIXI.Texture.from('/img/projectile-jsjs.png'),
 
   // Weapons
   bitgun: PIXI.Texture.from('/img/bitgun.png'),

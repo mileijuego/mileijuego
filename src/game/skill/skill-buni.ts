@@ -22,7 +22,7 @@ export default class SkillBuni extends Skill {
     });
 
     const hp = this.agent.maxHp * value;
-    const damage = 5 + this.agent.damage * value;
+    const damage = this.agent.damage * value;
 
     ally.maxHp = hp;
     ally.hp = hp;

@@ -24,5 +24,6 @@
   "liberator-book": {
     "minLevel": 8
   },
-  "palaboom": {}
+  "palaboom": {},
+  "buni": { "minLevel": 4 }
 }

@@ -10,7 +10,7 @@ import {
 } from '../../char/character';
 import { DAMAGE_PER_LEVEL, GOD_MODE, HP_PER_LEVEL } from '../../constants';
 import Game from '../../game';
-import { skillMap } from '../../skill/skill-map';
+import { skillKey, skillMap } from '../../skill/skill-map';
 import Vector2D from '../../utils/vector-2d';
 import { weaponMap } from '../weapon/weapon-map';
 
@@ -31,6 +31,8 @@ export default class AgentCharacter extends Agent {
       this.damage += 9999;
     }
 
+    const skillPoints: Partial<Record<skillKey, number>> = {};
+
     // Sets the skills.
     character.skills
       // Removes the skills that are not in the char skills json
@@ -38,7 +40,8 @@ export default class AgentCharacter extends Agent {
       .forEach((cSkill) => {
         if (cSkill.points > 0) {
           const skill = new skillMap[cSkill.skillKey]({ agent: this });
-          skill.setPoints(cSkill.points, game);
+
+          skillPoints[skill.skillKey] = cSkill.points;
 
           this.addSkill(skill);
         }
@@ -78,11 +81,27 @@ export default class AgentCharacter extends Agent {
 
         case 'skillPointsMultiplier': {
           this.skills.forEach((skill) => {
-            skill.setPoints(skill.points * effect.value, game);
+            if (skill.skillKey) {
+              skillPoints[skill.skillKey] = skill.points * effect.value;
+            }
           });
           break;
         }
       }
+    });
+
+    this.skills.forEach((skill) => {
+      if (!skill.skillKey) {
+        return;
+      }
+
+      const points = skillPoints[skill.skillKey];
+
+      if (points === undefined) {
+        return;
+      }
+
+      skill.setPoints(points, game);
     });
   }
 }

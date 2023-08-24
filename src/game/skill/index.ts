@@ -9,8 +9,15 @@ export default class Skill {
   public skillKey?: skillKey;
 
   // Skill points
+  private __timesPointsWereSet = 0;
   protected __points: number = 1;
   public setPoints(value: number, game: Game) {
+    this.__timesPointsWereSet++;
+
+    if (this.__timesPointsWereSet > 1) {
+      throw new Error('Points only should be set once.');
+    }
+
     this.__points = value;
   }
   public get points() {

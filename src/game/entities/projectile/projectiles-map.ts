@@ -21,6 +21,7 @@ import {
   ProjectileGreenHeart,
   ProjectileHappy,
   ProjectileHeavenShovel,
+  ProjectileJsjs,
   ProjectileKKK,
   ProjectileL,
   ProjectileLittleGoldenChori,
@@ -84,6 +85,7 @@ const projectilesMap = {
   'projectile-currenthing': ProjectileCurrenthing,
   'projectile-costillar': ProjectileCostillar,
   'projectile-pancakes': ProjectilePancakes,
+  'projectile-jsjs': ProjectileJsjs,
 };
 
 export type projectileKey = keyof typeof projectilesMap;
