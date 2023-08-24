@@ -13,7 +13,7 @@ class Gun extends Weapon {
     this.spriteData.weaponKey = 'bitgun';
     this.spriteData.soundKey = 'shotgun';
 
-    this.projectileKey = 'projectile-costillar';
+    this.projectileKey = 'projectile-jsjs';
 
     this.spriteData.width = 40;
     this.spriteData.height = 12;
