@@ -12,6 +12,7 @@ const effects = {
 export default abstract class SpriteWithEffects extends Entity {
   public sprite!: PIXI.Sprite;
   private effects = new Set<keyof typeof effects>();
+  private _hurtEvents: ((n: number) => void)[] = [];
 
   protected showLastFilter() {
     const effs = Array.from(this.effects) as (keyof typeof effects)[];
@@ -28,6 +29,8 @@ export default abstract class SpriteWithEffects extends Entity {
       this.effects.add('damage');
       this.showLastFilter();
 
+      this._hurtEvents.forEach((e) => e(n));
+
       setTimeout(() => {
         this.effects.delete('damage');
         this.showLastFilter();
@@ -35,6 +38,10 @@ export default abstract class SpriteWithEffects extends Entity {
     }
 
     super.hurt(n);
+  }
+
+  public onHurt(e: (n: number) => void) {
+    this._hurtEvents.push(e);
   }
 
   public heal(n: number) {

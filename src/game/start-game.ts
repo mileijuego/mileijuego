@@ -281,8 +281,6 @@ export async function startGame(
   }
   // ---------------------------------------------------------- //
 
-  const gameSpriteFactory = new GameSpriteFactory();
-
   const titleTextStyle = new PIXI.TextStyle({
     dropShadow: true,
     fill: textColor,
@@ -325,7 +323,7 @@ export async function startGame(
       }
 
       if (e.spriteData) {
-        const gameSprite = gameSpriteFactory.create(e.spriteData, e, userData);
+        const gameSprite = gameSpriteFactory.create(e.spriteData, e, userData, game);
 
         gameSprite.forEach((s) => {
           if (s.sprite) {
@@ -623,6 +621,8 @@ export async function startGame(
   background.endFill();
   background.sortableChildren = true;
   backgroundContainer.addChild(background);
+
+  const gameSpriteFactory = new GameSpriteFactory(background);
 
   // ---------------------------------------------------------- //
 
