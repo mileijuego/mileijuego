@@ -1,10 +1,10 @@
 /**
  * Returns the rotation to a point in radians.
- * @param mx 
- * @param my 
- * @param px 
- * @param py 
- * @returns 
+ * @param mx
+ * @param my
+ * @param px
+ * @param py
+ * @returns
  */
 export function rotationToPoint(
   mx: number,
@@ -25,6 +25,10 @@ export function getRandomFromArray(arr: any[]) {
 
 export function getRandomIntInRange(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+export function getRandomFloatInRange(min: number, max: number) {
+  return Math.random() * (max - min) + min;
 }
 
 export function degreesToRadians(degrees: number) {
