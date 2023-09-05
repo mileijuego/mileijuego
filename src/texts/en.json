@@ -103,6 +103,10 @@
   "stoic-description": "Milei knows that a man's greatest rival is himself. Therefore, in this stoic training mode, he will attempt to surpass himself by fighting against his clone. If he manages to defeat it, he will gain {STOIC_EXP_PERCENTAGE}% of his total experience.",
   "stoic-winMessage": "You defeated your clone!",
 
+  "villarruel-title": "Villarruel",
+  "villarruel-description": "The left-handed are attacking, but this time it's not the Lion, it's the Iron Lady Villarruel. Your duty is to protect her!",
+  "villarruel-winMessage": "You defended the Iron Lady!",
+
   "skill-despertar-leones": "Awaken Lions",
   "skill-despertar-leonesD": "(Q) Milei awakens the Libertarian Lions to assist him in the fight for freedom. (+{SKILL_LION_BASE_HP} HP and +{SKILL_LION_BASE_DMG} attack per point)",
   "skill-libertad-avanza": "Freedom Advances",

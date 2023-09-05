@@ -103,6 +103,10 @@
   "stoic-description": "Milei sabe que o maior adversário de um homem é ele mesmo. Por isso, neste modo de treinamento estoico, ele tentará se superar lutando contra seu clone. Se conseguir derrotá-lo, ganhará {STOIC_EXP_PERCENTAGE}% de sua experiência total.",
   "stoic-winMessage": "Você derrotou o seu clone!",
 
+  "villarruel-title": "Villarruel",
+  "villarruel-description": "Os canhotos estão atacando, mas desta vez não é o Leão, é a Dama de Ferro Villarruel. Sua missão é protegê-la!",
+  "villarruel-winMessage": "Você defendeu a Dama de Ferro!",
+
   "skill-despertar-leones": "Despertar leões",
   "skill-despertar-leonesD": "(Q) Milei desperta os Leões Libertários para ajudá-lo na luta pela liberdade. (+{SKILL_LION_BASE_HP} de vida e +{SKILL_LION_BASE_DMG} de ataque por ponto)",
   "skill-libertad-avanza": "Libertad avança",
