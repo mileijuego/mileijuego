@@ -10,6 +10,8 @@ export interface IEnemyWave {
   enemySpawnDelay: number;
   enemySpawnDelayToSubtractPerEnemySpawned: number;
   minEnemySpawnDelay: number;
+  onlyLeft?: boolean;
+  maxEnemiesAtTheSameTime?: number;
 }
 
 export interface ILevelData {

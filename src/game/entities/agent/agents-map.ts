@@ -49,6 +49,7 @@ import Momb from './momb';
 import Lali from './lali';
 import Buni from './buni';
 import Mazza from './mazza';
+import Villarruel from './villarruel-pack/villarruel';
 
 const agentsMap = {
   alberso: Alberso,
@@ -118,6 +119,8 @@ const agentsMap = {
   'wall-alien2': WallAlien2,
   'wall-alien3': WallAlien3,
   'wall-alien4': WallAlien4,
+
+  villarruel: Villarruel,
 };
 
 export type agentKey = keyof typeof agentsMap;

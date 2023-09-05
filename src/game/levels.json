@@ -328,5 +328,43 @@
     "startY": 600,
     "mapColor": "#998666",
     "enemyWaves": []
+  },
+
+  "villarruel": {
+    "category": "others",
+    "special": true,
+    "playerAgent": "villarruel",
+    "finalBoss": "gordo-mortero",
+    "music": "music-epic",
+    "scripts": ["villarruel"],
+    "mapWidth": 1280,
+    "mapHeight": 720,
+    "startX": 1200,
+    "startY": 360,
+    "mapColor": "#998666",
+    "enemyWaves": [
+      {
+        "enemiesNumber": 1000,
+        "enemies": [
+          {
+            "item": [
+              { "item": "fat-campodist", "chance": 10 },
+              { "item": "golden-fat-campodist", "chance": 10 },
+              { "item": "gordo-mortero", "chance": 1 }
+            ],
+            "chance": 49
+          },
+          {
+            "item": "bullshit",
+            "chance": 1
+          }
+        ],
+        "enemySpawnDelay": 1,
+        "enemySpawnDelayToSubtractPerEnemySpawned": 0.05,
+        "minEnemySpawnDelay": 0.2,
+        "onlyLeft": true,
+        "maxEnemiesAtTheSameTime": 16
+      }
+    ]
   }
 }

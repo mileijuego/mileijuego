@@ -16,6 +16,8 @@ import Masgloton from '../entities/agent/masgloton';
 import Mazza from '../entities/agent/mazza';
 import Milei from '../entities/agent/milei';
 import Sylvester from '../entities/agent/sylvester';
+import SylvesterVillarruel from '../entities/agent/villarruel-pack/sylvester';
+import WallDefense from '../entities/agent/wall/defense';
 import {
   ItemLibertarianStaffFire,
   ItemLibertarianStaffIce,
@@ -31,6 +33,7 @@ import {
 import { IEnemyWave } from '../levels';
 import SkillCentralBankShield from '../skill/skill-central-bank-shield';
 import SkillCentralBankShield2 from '../skill/skill-central-bank-shield2';
+import SkillHealing from '../skill/skill-healing';
 import sounds from '../sounds';
 import { getTcByWave } from '../tc';
 import Vector2D from '../utils/vector-2d';
@@ -414,9 +417,7 @@ const scripts = {
     let defenses: Agent[] = [];
     game.on(TRIGGER_ENEMY_WAVE_START, (waveNumber: number) => {
       // When a wave starts the game will add defenses and remove the old ones.
-      defenses.forEach(
-        (d) => game.hasAgent(d.uuid) && game.removeAgent(d.uuid),
-      );
+      defenses.forEach((d) => (d.hp = 0));
       defenses = game.addDefenses(400 * (waveNumber + 1));
 
       // Creates the next wave.
@@ -448,6 +449,80 @@ const scripts = {
     );
 
     game.addAgent(mileiEnemy);
+  },
+
+  villarruel: (game: Game) => {
+    const addWall = (position: Vector2D) => {
+      const w = new WallDefense({
+        position,
+        team: ALLY_TEAM,
+      });
+
+      w.hp = 10000;
+      w.maxHp = 10000;
+
+      w.addSkill(new SkillHealing({ agent: w }, { delay: 10 }));
+
+      game.addAgent(w);
+
+      return w;
+    };
+
+    const wallX = 600;
+
+    addWall(new Vector2D(wallX, 32 + 8));
+    addWall(new Vector2D(wallX, 96 + 8));
+    // addWall(new Vector2D(wallX, 160 + 8))
+    addWall(new Vector2D(wallX, 224 + 8));
+    addWall(new Vector2D(wallX, 288 + 8));
+    // addWall(new Vector2D(wallX, 352 + 8))
+    addWall(new Vector2D(wallX, 416 + 8));
+    addWall(new Vector2D(wallX, 480 + 8));
+    // addWall(new Vector2D(wallX, 544 + 8))
+    addWall(new Vector2D(wallX, 608 + 8));
+    addWall(new Vector2D(wallX, 672 + 8));
+
+    function allies() {
+      const sylvester = new SylvesterVillarruel({
+        position: new Vector2D(game.width, Math.random() * game.height),
+        team: ALLY_TEAM,
+      });
+
+      game.addAgent(sylvester);
+
+      const allyCreationDelay = 4;
+
+      const allyTimeout = () => {
+        let coords = {
+          x: game.width,
+          y: Math.random() * game.height,
+        };
+
+        game.addAgent(
+          game.createAgentByKey(
+            'worker',
+            new Vector2D(coords.x, coords.y),
+            ALLY_TEAM,
+          ),
+        );
+
+        game.addTimeout(() => {
+          allyTimeout();
+        }, allyCreationDelay * 1000);
+      };
+
+      allyTimeout();
+    }
+
+    const libertarianStaffesFactory = new ItemFactory({
+      delay: 10,
+      items: [ItemLibertarianStaffFire, ItemLibertarianStaffIce],
+      team: ALLY_TEAM,
+    });
+
+    libertarianStaffesFactory.start(game);
+
+    allies();
   },
 };
 
