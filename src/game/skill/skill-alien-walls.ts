@@ -19,9 +19,7 @@ export default class SkillAlienWalls extends Skill {
 
   execute(game: Game) {
     // Removes the old walls
-    this.__walls.forEach(
-      (w) => game.hasAgent(w.uuid) && game.removeAgent(w.uuid),
-    );
+    this.__walls.forEach((w) => (w.hp = 0));
 
     const offSetX = 512;
     const offSetY = 512;

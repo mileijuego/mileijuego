@@ -11,6 +11,8 @@ export default class EnemyFactory {
   protected enemySpawnDelayToSubtractPerEnemySpawned: number;
   protected minEnemySpawnDelay: number;
   protected enemies: DataEnemyTC;
+  protected onlyLeft: boolean;
+  protected maxEnemiesAtTheSameTime?: number;
 
   public enemiesSpawned: number;
 
@@ -20,6 +22,8 @@ export default class EnemyFactory {
     enemySpawnDelayToSubtractPerEnemySpawned,
     minEnemySpawnDelay,
     enemies,
+    onlyLeft = false,
+    maxEnemiesAtTheSameTime,
   }: IEnemyWave) {
     this.initialDelay = initialDelay;
     this.enemySpawnDelay = enemySpawnDelay;
@@ -28,6 +32,8 @@ export default class EnemyFactory {
     this.minEnemySpawnDelay = minEnemySpawnDelay;
     this.enemiesSpawned = 0;
     this.enemies = enemies;
+    this.onlyLeft = onlyLeft;
+    this.maxEnemiesAtTheSameTime = maxEnemiesAtTheSameTime;
   }
 
   loop(game: Game, deltaTime: number) {
@@ -41,6 +47,14 @@ export default class EnemyFactory {
 
       game.addTimeout(() => {
         this.__justCreatedEnemy = false;
+
+        if (this.maxEnemiesAtTheSameTime !== undefined) {
+          const enemiesAmount = game.getAgentsOfTeam(ENEMY_TEAM).length;
+          if (enemiesAmount >= this.maxEnemiesAtTheSameTime) {
+            return;
+          }
+        }
+
         this.create(game);
 
         this.enemySpawnDelay = Math.max(
@@ -55,7 +69,12 @@ export default class EnemyFactory {
     const posRand = Math.random();
     let coords;
 
-    if (posRand < 0.25) {
+    if (this.onlyLeft) {
+      coords = {
+        x: 0,
+        y: Math.random() * game.height,
+      };
+    } else if (posRand < 0.25) {
       // Top
       coords = {
         x: Math.random() * game.width,

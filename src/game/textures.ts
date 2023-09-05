@@ -77,6 +77,7 @@ const textures: ITextures = {
   momb: PIXI.Texture.from('/img/momb.png'),
   buni: PIXI.Texture.from('/img/buni.png'),
   mazza: PIXI.Texture.from('/img/mazza.png'),
+  villarruel: PIXI.Texture.from('/img/villarruel.png'),
 
   // Projectiles
   'projectile-bullet': PIXI.Texture.from('/img/projectile-bullet.png'),

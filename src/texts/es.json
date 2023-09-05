@@ -103,6 +103,10 @@
   "stoic-description": "Milei sabe que el mayor rival de un hombre es él mismo. Por eso, en este modo de entrenamiento estoico intentará autosuperarse luchando contra su clon. Si logra derrotarlo, ganará el {STOIC_EXP_PERCENTAGE}% de su experiencia total.",
   "stoic-winMessage": "¡Derrotaste a tu clon!",
 
+  "villarruel-title": "Villarruel",
+  "villarruel-description": "",
+  "villarruel-winMessage": "¡Defendiste a La Dama de Hierro!",
+
   "skill-despertar-leones": "Despertar leones",
   "skill-despertar-leonesD": "(Q) Milei despierta a los Leones Libertarios para que lo ayuden en la lucha por la libertad. (+{SKILL_LION_BASE_HP} hp y +{SKILL_LION_BASE_DMG} ataque por punto)",
   "skill-libertad-avanza": "Libertad avanza",

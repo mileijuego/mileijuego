@@ -20,6 +20,7 @@ export default class SkillExplode extends Skill {
       by: this.agent,
     });
 
-    game.removeAgent(this.agent.uuid);
+    // This will remove the entity once has exploded.
+    this.agent.hp = 0;
   }
 }
