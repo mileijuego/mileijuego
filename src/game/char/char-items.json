@@ -29,7 +29,7 @@
   },
   "divine-armor": {
     "img": "/img/store/divine-armor.png",
-    "price": 10000000,
+    "price": 5000000,
     "type": "armors",
     "spriteKey": "milei-divine",
     "effects": [

@@ -1,6 +1,6 @@
 {
   "wave": "Onda",
-  "enemiesDefeated": "Canhotos educados",
+  "enemiesDefeated": "Orkos educados",
   "play": "Jogar",
   "lions": "Leões",
   "youHaveBeenDefeated": "Você foi derrotado",
@@ -96,8 +96,8 @@
   "survival-title": "Modo sobrevivência",
   "survival-description": "Neste modo de jogo, você estará educando os esquerdistas infinitamente. É ideal para aumentar o nível de Milei.",
 
-  "zurdo-title": "Modo esquerdista",
-  "zurdo-description": "POV: você é um esquerdista tentando deter a liberdade.",
+  "zurdo-title": "Modo orko",
+  "zurdo-description": "POV: você é um orko tentando deter a liberdade.",
 
   "stoic-title": "Modo estoico",
   "stoic-description": "Milei sabe que o maior adversário de um homem é ele mesmo. Por isso, neste modo de treinamento estoico, ele tentará se superar lutando contra seu clone. Se conseguir derrotá-lo, ganhará {STOIC_EXP_PERCENTAGE}% de sua experiência total.",
@@ -111,7 +111,7 @@
   "skill-despertar-leonesD": "(Q) Milei desperta os Leões Libertários para ajudá-lo na luta pela liberdade. (+{SKILL_LION_BASE_HP} de vida e +{SKILL_LION_BASE_DMG} de ataque por ponto)",
   "skill-libertad-avanza": "Libertad avança",
   "skill-libertad-avanzaD": "(E) Milei ganha uma grande velocidade, útil para se aproximar ou escapar do inimigo. Além disso, ele se cura um pouco. (+50 de vida por ponto)",
-  "skill-zurdos-tiemblen": "Zurdos tremam",
+  "skill-zurdos-tiemblen": "Orkos tremam",
   "skill-zurdos-tiemblenD": "(R) Milei faz todos os canhotos presentes tremerem, diminuindo sua velocidade e causando um pouco de dano a eles. (+35 de dano por ponto)",
   "skill-milei-porquenotevas": "Por que você não vai embora?",
   "skill-milei-porquenotevasD": "(F) Milei perguntará gentilmente aos seus inimigos se eles podem ir embora. (+20 de dano e +300ms de empurrão por ponto)",

@@ -4,9 +4,7 @@ import { BsGearFill } from 'react-icons/bs';
 
 import packageJson from '../../../package.json';
 import GameTitle from '../../components/game-title';
-import InstagramLogo from '../../components/instagram-logo';
 import PlaystoreButton from '../../components/playstore-button';
-import TwitterButton from '../../components/twitter-button';
 import '../main-menu/main-menu.css';
 import FullscreenButton from '../../components/full-screen-button';
 import { getAvailableSkillsPoints } from '../../game/char/character';
@@ -57,22 +55,6 @@ export default function MainMenuView() {
           rel="noreferrer"
         >
           <PlaystoreButton className="right-social-network-icon" />
-        </a>
-        <a
-          className="social-network-link"
-          href="https://twitter.com/MileiJuego"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <TwitterButton className="right-social-network-icon" />
-        </a>
-        <a
-          className="social-network-link"
-          href="https://www.instagram.com/mileijuego/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <InstagramLogo className="right-social-network-icon" />
         </a>
       </div>
 
