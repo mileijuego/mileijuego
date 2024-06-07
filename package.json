@@ -1,6 +1,6 @@
 {
   "name": "mileijuego",
-  "version": "3.12.2",
+  "version": "3.12.3",
   "private": true,
   "engines": {
     "node": "16.20.0"
