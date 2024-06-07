@@ -4,7 +4,6 @@ import { BsGearFill } from 'react-icons/bs';
 
 import packageJson from '../../../package.json';
 import GameTitle from '../../components/game-title';
-import PlaystoreButton from '../../components/playstore-button';
 import '../main-menu/main-menu.css';
 import FullscreenButton from '../../components/full-screen-button';
 import { getAvailableSkillsPoints } from '../../game/char/character';
@@ -47,16 +46,7 @@ export default function MainMenuView() {
         {getTxt(userData.language, 'lions')}
       </button>
 
-      <div className="top-left-section">
-        <a
-          className="social-network-link"
-          href="https://play.google.com/store/apps/details?id=com.gamesflood.mileijuego"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <PlaystoreButton className="right-social-network-icon" />
-        </a>
-      </div>
+      <div className="top-left-section"></div>
 
       <div className="top-right-section">
         <div>
