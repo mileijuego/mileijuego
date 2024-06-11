@@ -1,4 +1,4 @@
-package com.gamesflood.mileijuego;
+package com.gamesflood.mileigame;
 
 import android.os.Bundle;
 import android.view.View;
