@@ -1,3 +1,9 @@
+import { MockStorage } from '@src/utils/storage.mock'
+
+jest.mock('@ionic/storage', () => ({
+  Storage: MockStorage,
+}));
+
 import { getDefaultUserData, isLevelPlayable } from './local-storage';
 
 describe('getDefaultUserData', () => {

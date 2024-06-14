@@ -1,3 +1,9 @@
+import { MockStorage } from '@src/utils/storage.mock';
+
+jest.mock('@ionic/storage', () => ({
+  Storage: MockStorage,
+}));
+
 import { CharItemStatus } from '../../utils/local-storage';
 import { BASE_EXP } from '../constants';
 import { skillKey } from '../skill/skill-map';
