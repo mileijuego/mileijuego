@@ -1,3 +1,9 @@
+import { MockStorage } from '@src/utils/storage.mock'
+
+jest.mock('@ionic/storage', () => ({
+  Storage: MockStorage,
+}));
+
 import Game from '../game';
 import { ENEMY_TEAM } from '../constants';
 import scripts from './scripts';

@@ -1,3 +1,9 @@
+import { MockStorage } from '@src/utils/storage.mock'
+
+jest.mock('@ionic/storage', () => ({
+  Storage: MockStorage,
+}));
+
 import Milei from './entities/agent/milei';
 import Pibi from './entities/agent/pibi';
 import { ItemMoney } from './entities/item/items';
